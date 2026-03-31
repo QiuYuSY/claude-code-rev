@@ -9,6 +9,7 @@
 3. [逐段精读：`mcp/client.ts -> loadPluginCommands.ts -> commands.ts`](./03-guided-reading-mcp-plugins-commands.md)
 4. [设计分析：为什么这样设计](./04-design-analysis.md)
 5. [练习与输出](./05-exercises.md)
+6. [源码索引表](./06-source-index.md)
 
 ## 本课目标
 

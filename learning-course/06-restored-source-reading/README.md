@@ -9,6 +9,7 @@
 3. [逐段精读：`README.md -> shims/ -> 课程主干图解`](./03-guided-reading-restored-repo-method.md)
 4. [设计分析：如何评价这样一个复杂恢复版项目](./04-design-analysis.md)
 5. [练习与输出](./05-exercises.md)
+6. [源码索引表](./06-source-index.md)
 
 ## 本课目标
 

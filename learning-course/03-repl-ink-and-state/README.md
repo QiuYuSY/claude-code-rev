@@ -9,6 +9,7 @@
 3. [逐段精读：`replLauncher.tsx -> App.tsx -> interactiveHelpers.tsx -> AppStateStore.ts`](./03-guided-reading-repl-app-interactivehelpers-state.md)
 4. [设计分析：为什么这样设计](./04-design-analysis.md)
 5. [练习与输出](./05-exercises.md)
+6. [源码索引表](./06-source-index.md)
 
 ## 本课目标
 
