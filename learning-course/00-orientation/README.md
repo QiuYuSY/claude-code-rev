@@ -13,6 +13,7 @@
 1. [Claude Code 与其他 Agent 的差异地图](./01-claude-code-vs-other-agents.md)
 2. [Claude Code 核心术语表](./02-core-concepts-glossary.md)
 3. [一次完整用户请求的端到端 walkthrough](./03-end-to-end-request-walkthrough.md)
+4. [学习检查表 / 打卡表](./04-study-checklist.md)
 
 ## 这一组文档的目标
 
