@@ -17,6 +17,10 @@
 - [第五课：MCP、插件与 Skills 扩展机制](./05-mcp-plugins-and-skills/README.md)
 - [第六课：恢复版源码的阅读策略与复盘方法](./06-restored-source-reading/README.md)
 
+### 汇报专题
+
+- [企业内部设计 Agent 时，如何借鉴 Claude Code 的设计](./07-enterprise-agent-report/README.md)
+
 ### 配套图解
 
 - [图解总览](./diagrams/README.md)
