@@ -8,6 +8,7 @@
 2. [PPT 提纲版](./01-ppt-outline.md)
 3. [管理层 1 页摘要版](./02-executive-summary.md)
 4. [技术评审版](./03-technical-review.md)
+5. [附录：Claude Code vs Cline vs Roo Code 的 Agent 设计差异](./04-claude-code-vs-cline-vs-roocode.md)
 
 它要回答的问题是：
 
