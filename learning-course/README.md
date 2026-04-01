@@ -4,6 +4,10 @@
 
 ## 课程结构
 
+### 小白入口
+
+- [小白友好版入门路径](./beginner-track/README.md)
+
 ### 预备入口
 
 - [预备课：面向已懂别的 Agent、但不懂 Claude Code 的入口层](./00-orientation/README.md)
@@ -17,7 +21,7 @@
 - [第五课：MCP、插件与 Skills 扩展机制](./05-mcp-plugins-and-skills/README.md)
 - [第六课：恢复版源码的阅读策略与复盘方法](./06-restored-source-reading/README.md)
 
-### 汇报专题
+### 附加材料
 
 - [企业内部设计 Agent 时，如何借鉴 Claude Code 的设计](./07-enterprise-agent-report/README.md)
 
@@ -32,11 +36,12 @@
 
 推荐顺序：
 
-1. 如果你已经懂别的 agent，但不懂 Claude Code，先读 [预备课](./00-orientation/README.md)
-2. 再读某一课目录下的 `README.md`
-3. 按编号顺序读子文档
-4. 看完后做该课的练习与输出
-5. 对照 `diagrams/` 里的图解复盘
+1. 如果你是小白，先读 [小白友好版入门路径](./beginner-track/README.md)
+2. 如果你已经懂别的 agent，但不懂 Claude Code，先读 [预备课](./00-orientation/README.md)
+3. 再读某一课目录下的 `README.md`
+4. 按编号顺序读子文档
+5. 看完后做该课的练习与输出
+6. 对照 `diagrams/` 里的图解复盘
 
 ## 课程设计原则
 
