@@ -1,5 +1,9 @@
 # Claude Code 如何映射这些 Agent 概念
 
+难度：中级
+预计阅读时间：10-12 分钟
+建议方式：建议精读
+
 前面 5 篇讲的是通用 Agent 设计，这一篇把它们映射回 Claude Code。
 
 ## Agent loop 对应哪里

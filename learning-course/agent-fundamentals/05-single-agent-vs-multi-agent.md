@@ -1,5 +1,9 @@
 # Single-Agent、Workflow、Multi-Agent 的区别
 
+难度：入门到中级
+预计阅读时间：8 分钟
+建议方式：必须读
+
 这三个词经常被混着用，但其实层次不一样。
 
 ## 1. Single-Agent
