@@ -1,8 +1,12 @@
 # Claude Code 源码学习课程
 
-这套课程现在按“每课一个文件夹”的方式组织，方便你把每节课当成一个独立专题来学，而不是在一个大文档里来回跳。
+这套课程现在不再只有“源码精读”一条线，而是拆成了多条入口，适合不同阶段的人。
 
 ## 课程结构
+
+### Agent 主线
+
+- [Agent 设计基础课](./agent-fundamentals/README.md)
 
 ### 小白入口
 
@@ -12,7 +16,7 @@
 
 - [预备课：面向已懂别的 Agent、但不懂 Claude Code 的入口层](./00-orientation/README.md)
 
-### 课程总览
+### 正式课程
 
 - [第一课：启动链路与命令系统](./01-startup-and-commands/README.md)
 - [第二课：工具抽象与 Query Loop](./02-tools-and-query-loop/README.md)
@@ -32,42 +36,75 @@
 - [运行时循环图](./diagrams/runtime-loop.md)
 - [扩展机制图](./diagrams/extension-architecture.md)
 
-## 怎么使用这套课
+## 最推荐的学习顺序
 
-推荐顺序：
+### 如果你真正想学的是 Agent 设计
 
-1. 如果你是小白，先读 [小白友好版入门路径](./beginner-track/README.md)
-2. 如果你已经懂别的 agent，但不懂 Claude Code，先读 [预备课](./00-orientation/README.md)
-3. 再读某一课目录下的 `README.md`
-4. 按编号顺序读子文档
-5. 看完后做该课的练习与输出
-6. 对照 `diagrams/` 里的图解复盘
+1. 先读 [Agent 设计基础课](./agent-fundamentals/README.md)
+2. 再读 [小白友好版入门路径](./beginner-track/README.md)
+3. 然后进入正式课程
+
+### 如果你是小白，但还不确定是否要深入源码
+
+1. 先读 [小白友好版入门路径](./beginner-track/README.md)
+2. 再读 [Agent 设计基础课](./agent-fundamentals/README.md)
+3. 然后按兴趣进入正式课程
+
+### 如果你已经懂别的 Agent，但不懂 Claude Code
+
+1. 先读 [预备课](./00-orientation/README.md)
+2. 再读 [Agent 设计基础课](./agent-fundamentals/README.md)
+3. 然后进入正式课程
+
+## 这套课程现在分别解决什么问题
+
+### `agent-fundamentals`
+
+解决：
+
+- Agent 到底是什么
+- Agent 的核心闭环是什么
+- Tools / Planning / Memory / HITL / Multi-Agent 各自解决什么问题
+
+### `beginner-track`
+
+解决：
+
+- 小白如何不被复杂工程直接劝退
+- 如何用最小概念集先建立感觉
+
+### `00-orientation`
+
+解决：
+
+- 如果你已经懂别的 agent，如何迁移认知到 Claude Code
+
+### `01` 到 `06`
+
+解决：
+
+- Claude Code 这些 agent 概念在真实工程里是如何落地的
 
 ## 课程设计原则
 
-这套课不是“告诉你看哪些文件”，而是尽量回答这些问题：
+这套课不只是告诉你：
+
+- 看哪些文件
+
+更想帮你回答：
 
 - 这个模块解决什么问题？
 - 为什么这样设计？
 - 它的收益和代价分别是什么？
 - 如果换成自己的项目，该借鉴什么、该警惕什么？
 
-## 总学习目标
-
-学完后，你应该能独立说明：
-
-1. Claude Code 为什么采用分层启动结构
-2. Query loop 为什么是系统心脏
-3. 为什么工具、消息、权限和上下文必须形成闭环
-4. 为什么 REPL 在这个项目里是运行时控制台
-5. 为什么 MCP、插件、Skills 会一起走向平台化架构
-
 ## 建议输出
 
-建议你最终至少产出下面 5 份内容：
+建议你最终至少产出下面 6 份内容：
 
-1. 一张你自己画的启动链路图
-2. 一张运行时循环图
-3. 一张扩展机制总图
-4. 一份设计评估文档：最想借鉴的 5 个设计与最想重构的 5 个设计
-5. 一份概念迁移总结：Claude Code 和你之前熟悉的 agent 系统，最关键的 5 个差异是什么
+1. 一份 Agent 设计概念总结
+2. 一张你自己画的启动链路图
+3. 一张运行时循环图
+4. 一张扩展机制总图
+5. 一份设计评估文档
+6. 一份概念迁移总结：Claude Code 和你熟悉的 agent 系统差异在哪里
