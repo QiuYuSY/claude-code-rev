@@ -1,61 +1,120 @@
-﻿# 浠庤繖閲屽紑濮?
-杩欎唤鏂囨。鍙В鍐充竴涓棶棰橈細
+# 从这里开始
 
-鈥滄垜鐜板湪鍒板簳璇ヨ蛋鍝潯瀛︿範璺嚎锛熲€?
-涓嶈鍏堥殢鏈虹偣寮€璇剧▼銆傚厛閫夎矾锛屽啀瀛︿範銆?
-## 璺嚎 1锛氭垜鎯冲 Agent 璁捐
+不要先随机点文档。  
+先选你的目标。
 
-濡傛灉浣犵殑鐩爣鏄細
+## 选择你的目标
 
-- 鐞嗚В Agent 鐨勬牳蹇冩蹇?- 鎼炴噦涓轰粈涔?Agent 涓嶅彧鏄ā鍨?+ 宸ュ叿
-- 瀛︿細鎶?Agent 璁捐鎴愬彲鎺х郴缁?
-璇峰厛璧拌繖鏉★細
+### A. 我真正想学的是 Agent 设计
 
-1. [Agent 璁捐鍩虹璇綸(./tracks/agent-fundamentals/README.md)
-2. [鍥哄畾妗堜緥绾縘(./extras/example-thread/README.md)
-3. [灏忕櫧鍙嬪ソ鐗堝叆闂ㄨ矾寰刔(./tracks/beginner-track/README.md)
-4. 鍐嶈繘鍏ユ寮忚绋?
-## 璺嚎 2锛氭垜鎯宠 Claude Code 婧愮爜
+你最关心的可能是：
 
-濡傛灉浣犵殑鐩爣鏄細
+- Agent 和 Chatbot 的区别
+- Agent loop
+- tool / planning / memory
+- HITL / permission / safety
+- single-agent 和 multi-agent
 
-- 鐪嬫噦杩欎釜浠撳簱鐨勪富骞叉灦鏋?- 鐞嗚В Claude Code 鐨勫疄鐜版柟寮?- 鍋氭簮鐮佺骇鍒嗘瀽
+请走这条：
 
-璇峰厛璧拌繖鏉★細
+1. [Agent 设计基础课](./tracks/agent-fundamentals/README.md)
+2. [固定案例线](./extras/example-thread/README.md)
+3. [小白友好版入门路径](./tracks/beginner-track/README.md)
+4. 再进入正式课程
 
-1. [棰勫璇綸(./tracks/00-orientation/README.md)
-2. [绗竴璇綸(./course/01-startup-and-commands/README.md)
-3. [绗簩璇綸(./course/02-tools-and-query-loop/README.md)
-4. [绗笁璇綸(./course/03-repl-ink-and-state/README.md)
-5. [绗洓璇綸(./course/04-permissions-messages-and-context/README.md)
-6. [绗簲璇綸(./course/05-mcp-plugins-and-skills/README.md)
-7. [绗叚璇綸(./course/06-restored-source-reading/README.md)
+### B. 我是小白，只想先别被吓退
 
-## 璺嚎 3锛氭垜鎯冲仛浼佷笟鍐呴儴姹囨姤
+你最关心的可能是：
 
-濡傛灉浣犵殑鐩爣鏄細
+- 这个项目到底是什么
+- 一次请求会发生什么
+- 我应该先看什么
+- 我应该先跳过什么
 
-- 鎶?Claude Code 鐨勮璁℃彁鐐兼垚浼佷笟鍙€熼壌缁忛獙
-- 鍋氭柟妗堟眹鎶?- 鍋氱鐞嗗眰鎽樿
-- 鍋氭妧鏈瘎瀹℃潗鏂?
-璇峰厛璧拌繖鏉★細
+请走这条：
 
-1. [浼佷笟姹囨姤涓撻](./extras/07-enterprise-agent-report/README.md)
-2. [绠＄悊灞?1 椤垫憳瑕佺増](./extras/07-enterprise-agent-report/02-executive-summary.md)
-3. [鎶€鏈瘎瀹＄増](./extras/07-enterprise-agent-report/03-technical-review.md)
-4. [Claude Code vs Cline vs Roo Code 瀵规瘮闄勫綍](./extras/07-enterprise-agent-report/04-claude-code-vs-cline-vs-roocode.md)
+1. [小白友好版入门路径](./tracks/beginner-track/README.md)
+2. [Agent 设计基础课](./tracks/agent-fundamentals/README.md)
+3. 再回来看这页，选择是否进入正式课程
 
-## 濡傛灉浣犲畬鍏ㄤ笉鐭ラ亾鑷繁灞炰簬鍝被
+### C. 我懂别的 Agent，只是不懂 Claude Code
 
-鎸夎繖涓『搴忥細
+你最关心的可能是：
 
-1. [灏忕櫧鍙嬪ソ鐗堝叆闂ㄨ矾寰刔(./tracks/beginner-track/README.md)
-2. [Agent 璁捐鍩虹璇綸(./tracks/agent-fundamentals/README.md)
-3. [浠庤繖閲屽紑濮嬪啀閫変竴娆¤矾](./START-HERE.md)
+- Claude Code 和我熟悉的 Agent 系统差在哪
+- 哪些概念是共通的
+- 哪些地方是 Claude Code 特有的
 
-## 涓€鍙ヨ瘽寤鸿
+请走这条：
 
-涓嶈浠?`main.tsx` 寮€濮嬶紝  
-涔熶笉瑕佷粠鏈€闀跨殑璇惧紑濮嬶紝  
-鍏堥€夎矾绾匡紝鍐嶅銆?
+1. [预备课](./tracks/00-orientation/README.md)
+2. [Agent 设计基础课](./tracks/agent-fundamentals/README.md)
+3. 再进入正式课程
 
+### D. 我想直接读 Claude Code 源码
+
+你最关心的可能是：
+
+- 启动链路
+- query loop
+- REPL / AppState
+- 权限与消息边界
+- MCP / 插件 / Skills
+
+请走这条：
+
+1. [第一课：启动链路与命令系统](./course/01-startup-and-commands/README.md)
+2. [第二课：工具抽象与 Query Loop](./course/02-tools-and-query-loop/README.md)
+3. [第三课：REPL、Ink 与状态管理](./course/03-repl-ink-and-state/README.md)
+4. [第四课：权限、消息与上下文拼装](./course/04-permissions-messages-and-context/README.md)
+5. [第五课：MCP、插件与 Skills 扩展机制](./course/05-mcp-plugins-and-skills/README.md)
+6. [第六课：恢复版源码的阅读策略与复盘方法](./course/06-restored-source-reading/README.md)
+
+### E. 我想做企业内部汇报
+
+你最关心的可能是：
+
+- 企业内部 Agent 平台设计
+- Claude Code 的可借鉴点
+- 管理层和技术评审怎么讲
+
+请走这条：
+
+1. [企业汇报专题](./extras/07-enterprise-agent-report/README.md)
+2. [管理层 1 页摘要版](./extras/07-enterprise-agent-report/02-executive-summary.md)
+3. [技术评审版](./extras/07-enterprise-agent-report/03-technical-review.md)
+4. [Claude Code vs Cline vs Roo Code 对比附录](./extras/07-enterprise-agent-report/04-claude-code-vs-cline-vs-roocode.md)
+
+## 如果你还是不知道怎么选
+
+就按最稳的顺序：
+
+1. [小白友好版入门路径](./tracks/beginner-track/README.md)
+2. [Agent 设计基础课](./tracks/agent-fundamentals/README.md)
+3. [固定案例线](./extras/example-thread/README.md)
+4. 再进入正式课程
+
+## 不建议你做的事
+
+不要一上来就：
+
+- 先啃 `main.tsx`
+- 先啃 `query.ts`
+- 先钻 `shims/`
+- 试图第一遍看懂所有 feature gate
+
+如果你想知道为什么：
+
+- [先别从这里开始](./extras/do-not-start-here.md)
+
+## 如果你担心读不完
+
+没关系，这里专门有一份：
+
+- [学到哪里可以先停](./extras/stop-points.md)
+
+## 一句话建议
+
+先按目标选路线，  
+再按课程学习，  
+不要靠“点开最大文件”开始。
