@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Claude Code 学习平台</title>
+    <meta
+      name="description"
+      content="Claude Code 与 Agent 设计课程的静态网页门户，支持路线选择、课程地图、搜索筛选与学习进度记录。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Agent Design Learning Hub</p>
+          <h1>Claude Code 学习平台</h1>
+          <p class="hero-text">
+            这不是普通目录页，而是一个面向学习者的课程门户。你可以先按目标选路线，再进入
+            Claude Code 的源码、Agent 设计方法和企业汇报材料。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="../START-HERE.md">先走路线分流</a>
+            <a class="secondary-link" href="../README.md">返回 Markdown 首页</a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>3</strong>
+              <span>学习主线</span>
+            </article>
+            <article>
+              <strong>6</strong>
+              <span>正式课程</span>
+            </article>
+            <article>
+              <strong>40+</strong>
+              <span>课程文档</span>
+            </article>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <svg viewBox="0 0 540 420" role="img" aria-label="学习结构图">
+            <defs>
+              <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f3d18b" />
+                <stop offset="100%" stop-color="#d96a2b" />
+              </linearGradient>
+              <linearGradient id="heroGradientCool" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a7d4c7" />
+                <stop offset="100%" stop-color="#2f7d73" />
+              </linearGradient>
+            </defs>
+            <rect x="20" y="24" width="220" height="84" rx="20" class="node warm" />
+            <text x="44" y="58" class="node-label">Agent 主线</text>
+            <text x="44" y="84" class="node-sub">先理解 Agent 概念与设计</text>
+
+            <rect x="300" y="24" width="220" height="84" rx="20" class="node cool" />
+            <text x="324" y="58" class="node-label">小白入口</text>
+            <text x="324" y="84" class="node-sub">先建立感觉，不被工程劝退</text>
+
+            <rect x="160" y="156" width="220" height="84" rx="20" class="node neutral" />
+            <text x="184" y="190" class="node-label">正式课程</text>
+            <text x="184" y="216" class="node-sub">从启动链路到扩展架构</text>
+
+            <rect x="20" y="288" width="220" height="84" rx="20" class="node cool" />
+            <text x="44" y="322" class="node-label">固定案例线</text>
+            <text x="44" y="348" class="node-sub">用真实任务串起整套课程</text>
+
+            <rect x="300" y="288" width="220" height="84" rx="20" class="node warm" />
+            <text x="324" y="322" class="node-label">企业汇报材料</text>
+            <text x="324" y="348" class="node-sub">把源码经验翻译成方案语言</text>
+
+            <path d="M240 108 C250 126, 250 136, 270 156" class="edge" />
+            <path d="M300 108 C290 126, 290 136, 270 156" class="edge" />
+            <path d="M270 240 C230 262, 205 270, 180 288" class="edge" />
+            <path d="M270 240 C310 262, 335 270, 360 288" class="edge" />
+          </svg>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Choose Your Path</p>
+              <h2>先选目标，再看内容</h2>
+            </div>
+            <p class="section-copy">
+              下面这 5 条路线对应不同人群。先选路线，页面会自动高亮推荐课程。
+            </p>
+          </div>
+          <div class="route-grid" id="route-grid"></div>
+        </section>
+
+        <section class="panel planner-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Study Planner</p>
+              <h2>学习节奏建议</h2>
+            </div>
+            <p class="section-copy">
+              如果你只想学到“够用”，或者暂时只关注 Agent 设计，这里会告诉你读到哪可以先停。
+            </p>
+          </div>
+          <div class="planner-grid" id="planner-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Concept Map</p>
+              <h2>Agent 核心概念图</h2>
+            </div>
+            <p class="section-copy">
+              先不要死盯源码。先把 Agent 的几个核心概念关系建立起来，再回看 Claude Code 会更轻松。
+            </p>
+          </div>
+          <div class="concept-map">
+            <div class="concept-card central">
+              <h3>Agent Loop</h3>
+              <p>感知 → 决策 → 执行 → 反馈 → 下一轮</p>
+            </div>
+            <div class="concept-card">
+              <h3>Tools</h3>
+              <p>决定 Agent 能做什么</p>
+            </div>
+            <div class="concept-card">
+              <h3>Planning</h3>
+              <p>决定复杂任务如何拆步骤</p>
+            </div>
+            <div class="concept-card">
+              <h3>Memory</h3>
+              <p>决定系统如何跨轮保持连续性</p>
+            </div>
+            <div class="concept-card">
+              <h3>Permissions</h3>
+              <p>决定能力边界与可控性</p>
+            </div>
+            <div class="concept-card">
+              <h3>State</h3>
+              <p>决定长期会话如何持续存在</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading with-controls">
+            <div>
+              <p class="eyebrow">Library</p>
+              <h2>全部课程与材料</h2>
+            </div>
+            <div class="controls">
+              <label class="search-label">
+                <span>搜索</span>
+                <input id="search-input" type="search" placeholder="例如：query、权限、企业汇报" />
+              </label>
+              <div class="filter-group" id="filter-group"></div>
+            </div>
+          </div>
+          <div class="card-grid" id="card-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Visual Anchors</p>
+              <h2>先看图，再看代码</h2>
+            </div>
+            <p class="section-copy">
+              对大项目来说，图比代码更适合建立骨架感。下面这 3 份图解建议反复回看。
+            </p>
+          </div>
+          <div class="diagram-grid" id="diagram-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

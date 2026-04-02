@@ -9,6 +9,12 @@
 
 ## 入口选择
 
+### 网页入口
+
+如果你更喜欢网页式浏览，而不是直接翻 Markdown：
+
+- [前端课程门户](./portal/index.html)
+
 ### 1. 我想先学 Agent 设计
 
 适合：
@@ -150,6 +156,7 @@
 
 ## 导航工具
 
+- [前端课程门户](./portal/index.html)
 - [从这里开始](./START-HERE.md)
 - [先别从这里开始](./extras/do-not-start-here.md)
 - [固定案例线](./extras/example-thread/README.md)
